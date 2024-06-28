@@ -1,0 +1,25 @@
+running install
+running bdist_egg
+running egg_info
+writing spmm_cpp.egg-info/PKG-INFO
+writing dependency_links to spmm_cpp.egg-info/dependency_links.txt
+writing top-level names to spmm_cpp.egg-info/top_level.txt
+reading manifest file 'spmm_cpp.egg-info/SOURCES.txt'
+writing manifest file 'spmm_cpp.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_ext
+building 'spmm_cpp' extension
+Emitting ninja build file /export/data/jspeng/light-dist-gnn/spmm_cpp/build/temp.linux-x86_64-cpython-38/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/1] c++ -MMD -MF /export/data/jspeng/light-dist-gnn/spmm_cpp/build/temp.linux-x86_64-cpython-38/spmm_original.o.d -pthread -B /export/data/jspeng/anaconda3/envs/sancus-cu10/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include -I/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include/TH -I/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include/THC -I/export/data/jspeng/anaconda3/envs/sancus-cu10/include/python3.8 -c -c /export/data/jspeng/light-dist-gnn/spmm_cpp/spmm_original.cpp -o /export/data/jspeng/light-dist-gnn/spmm_cpp/build/temp.linux-x86_64-cpython-38/spmm_original.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=spmm_cpp -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+FAILED: /export/data/jspeng/light-dist-gnn/spmm_cpp/build/temp.linux-x86_64-cpython-38/spmm_original.o 
+c++ -MMD -MF /export/data/jspeng/light-dist-gnn/spmm_cpp/build/temp.linux-x86_64-cpython-38/spmm_original.o.d -pthread -B /export/data/jspeng/anaconda3/envs/sancus-cu10/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include -I/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include/TH -I/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include/THC -I/export/data/jspeng/anaconda3/envs/sancus-cu10/include/python3.8 -c -c /export/data/jspeng/light-dist-gnn/spmm_cpp/spmm_original.cpp -o /export/data/jspeng/light-dist-gnn/spmm_cpp/build/temp.linux-x86_64-cpython-38/spmm_original.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=spmm_cpp -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+cc1plus: warning: command-line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /export/data/jspeng/light-dist-gnn/spmm_cpp/spmm_original.cpp:2:
+/export/data/jspeng/anaconda3/envs/sancus-cu10/lib/python3.8/site-packages/torch/include/ATen/cuda/CUDAContext.h:5:10: fatal error: cuda_runtime_api.h: No such file or directory
+    5 | #include <cuda_runtime_api.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
