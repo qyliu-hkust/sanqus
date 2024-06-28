@@ -1,5 +1,5 @@
 # sanqus
-staleness+quantization for efficient distributed gnn training based on [SANCUS](https://github.com/chenzhao/light-dist-gnn) by [@Zhao Chen](https://github.com/chenzhao).
+Implementation of staleness+quantization for efficient distributed GNN training based on [SANCUS](https://github.com/chenzhao/light-dist-gnn).
 
 #### Getting started
 
