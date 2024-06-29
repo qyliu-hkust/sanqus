@@ -9,7 +9,7 @@ conda create --name gnn
 conda activate gnn
 ```
 
-2. Install dependencies. 
+2. Install dependencies.
 ```
 conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 conda install -c dglteam dgl-cuda11.3
@@ -40,6 +40,8 @@ Optional model choice: gcn (default), qgcn, cgcn, gat
 
 #### About dataset preparation
 There is a known issue leading to a download error when you prepare the amazon dataset for older pyg packages. 
+
 We fix the bug in file `/fix_patch/amazon_products.py`. 
-You can replace yours in `PATH_TO_PYG_LIB/torch_geometric/datasets/`. 
+
+You can replace yours in `PATH_TO_PYG_LIB/torch_geometric/datasets/` to avoid data downloading error. 
 
