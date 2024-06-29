@@ -39,7 +39,7 @@ Optional model choice: gcn (default), qgcn, cgcn, gat
 
 
 #### About dataset preparation
-There is a known issue leading to a download error when you prepare the amazon dataset for older pyg packages. 
+There is a known issue leading to a download error when you prepare the amazon dataset for a older `pyg` version. 
 
 We fix the bug in file `/fix_patch/amazon_products.py`. 
 
