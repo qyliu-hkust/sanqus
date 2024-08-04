@@ -1,3 +1,5 @@
+![Alt text](./logo.svg)
+
 # sanqus
 Implementation of staleness+quantization for efficient distributed GNN training based on [SANCUS](https://github.com/chenzhao/light-dist-gnn).
 
