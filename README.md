@@ -39,7 +39,7 @@ Graph partition number can be either 4 (default) or 8 based on your available GP
 ```
 python main.py --model model_name --dataset dataset_name --epoch 20
 ```
-Optional model choice: gcn (default), qgcn, cgcn, gat
+Optional model choice: gcn (default), qgcn, cgcn, qcgcn, gat
 
 
 #### About dataset preparation

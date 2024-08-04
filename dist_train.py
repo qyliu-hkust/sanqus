@@ -1,5 +1,5 @@
 from coo_graph import Parted_COO_Graph
-from models import GCN, QGCN, GAT, CachedGCN
+from models import GCN, QGCN, GAT, CachedGCN, QCachedGCN
 
 import torch
 import torch.nn as nn
@@ -29,6 +29,8 @@ def train(g, env, total_epoch):
         model = QGCN(g, env, hidden_dim=256)
     elif env.model == "gcn":
         model = GCN(g, env, hidden_dim=256)
+    elif env.model == "qcgcn":
+        model = QCachedGCN(g, env, hidden_dim=16)
     elif env.model == "cgcn":
         model = CachedGCN(g, env, hidden_dim=16)
     elif env.model == "gat":
